@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Salão Beauty | Cadastrar patrimonio</title>
+  <title>Cadastrar Fornecedor</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,40 +21,61 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <b>Cadastrar</b> | Patrimonio
+    Cadastrar <b>Fornecedor</b>
   </div>
 
   <div class="card">
     <div class="card-body register-card-body">
-      <p class="login-box-msg">Informações do Patrimonio</p>
+      <p class="login-box-msg">Cadastrar um novo Fornecedor</p>
 
       <form action="../../index.html" method="post">
         <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Nome">
+          <input type="text" class="form-control" placeholder="Nome Comercial">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <label for="inputData">Data de Aquisição</label>
-		  <input type="date" class="form-control" id="inputData" placeholder="Data de Aquisição">
+          <input type="text" class="form-control" placeholder="Razão Social">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <input  type="number" step="0.01" min="0" class="form-control" placeholder="Valor em R$">
+          <input type="password" class="form-control" placeholder="CNPJ">
+          <span class="fa fa-lock form-control-feedback"></span>
+        </div>
+		<div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="Endereço">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Codigo">
+          <input type="text" class="form-control" placeholder="Cidade">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Descrição">
+          <input type="text" class="form-control" placeholder="Estado">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
-
+		<div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="CEP">
+          <span class="fa fa-user form-control-feedback"></span>
+        </div>
+		<div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="Telefone">
+          <span class="fa fa-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input type="email" class="form-control" placeholder="Email">
+          <span class="fa fa-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input type="text" class="form-control" placeholder="Observação">
+          <span class="fa fa-user form-control-feedback"></span>
+        </div>
         <div class="row">
+          
+          <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
-          </div>		  
+          </div>
+          <!-- /.col -->
         </div>
       </form>
       
