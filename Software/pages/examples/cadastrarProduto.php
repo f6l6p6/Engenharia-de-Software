@@ -7,16 +7,18 @@
 		die("Falha ao conectar");
 	} else{
 //Abaixo atribuímos os valores provenientes do formulário pelo método POST
-  $nome = $_POST['Nome']; 
-  $nasc = $_POST['DataNasc']; 
-  $tel = $_POST['Telefone']; 
-  $email = $_POST['Email'];
+  $nome = $_POST['nome'];  
+  $valor = $_POST['valor']; 
+  $forn = $_POST['forn'];
+  $marca = $_POST['marca'];
+  $val = $_POST['val'];
+  $obs = $_POST['obs'];
 
-   $string_sql = "INSERT INTO clientebd (id, nome, nasc, tel, email) VALUES (NULL, '$nome', '$nasc', '$tel','$email')";
+   $string_sql = "INSERT INTO clientebd (id, nome, data, valor, cod, desc) VALUES ('$nome', '$data', '$valor','$cod', '$desc')";
    $insert_member_res = mysqli_query($conexao, $string_sql);
    if(mysqli_affected_rows($conexao)>0){ //verifica se foi afetada alguma linha, nesse caso inserida alguma linha
        echo "<p>Registrado</p>";
-       echo '<a href="cadastroCliente.html">Voltar para formulário de cadastro</a>'; //Apenas um link para retornar para o formulário de cadastro
+       echo '<a href="cadastroPatrimonio.html">Voltar para formulário de cadastro</a>'; //Apenas um link para retornar para o formulário de cadastro
    } else {
        echo "Erro, não foi possível inserir no banco de dados";
    }
