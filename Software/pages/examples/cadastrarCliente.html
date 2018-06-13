@@ -28,28 +28,28 @@
     <div class="card-body register-card-body">
       <p class="login-box-msg">Informações do Cliente</p>
 
-      <form action="../../index.html" method="post">
+      <form name="cliente_f" action="cadastrarCliente.php" method="POST">
         <div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Nome">
+          <input type="text" class="form-control" placeholder="Nome" name="Nome">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
           <label for="inputData">Data de Nascimento</label>
-		  <input type="date" class="form-control" id="inputData" placeholder="Data de Nascimento">
+		  <input type="date" class="form-control" id="inputData" placeholder="DataNasc" name="DataNasc">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Telefone">
+          <input type="text" class="form-control" placeholder="Telefone" name=="Telefone">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 		<div class="form-group has-feedback">
-          <input type="text" class="form-control" placeholder="Email">
+          <input type="text" class="form-control" placeholder="Email" name="Email">
           <span class="fa fa-user form-control-feedback"></span>
         </div>
 
         <div class="row">
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
+            <input type="submit" class="btn btn-primary btn-block btn-flat" value="Cadastrar"/>
           </div>		  
         </div>
       </form>
@@ -60,20 +60,6 @@
 </div>
 <!-- /.register-box -->
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass   : 'iradio_square-blue',
-      increaseArea : '20%' // optional
-    })
-  })
-</script>
+
 </body>
 </html>
